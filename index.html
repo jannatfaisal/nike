@@ -1,0 +1,281 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <img src="./brand_logo (1).png" alt="Nike Logo">
+        </div>
+        <nav>
+            <a href="#">MENU</a>
+            <a href="#">LOCATION</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="btn">Login</div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+    <div class="mobile-nav">
+        <nav>
+            <a href="#">MENU</a>
+            <a href="#">LOCATION</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="btn">Login</div>
+    </div>
+
+
+    <div class="hero">
+        <div class="main-text">
+            <p class="bold">YOUR FEET <br>
+                DESERVE <br> THE BEST</p> 
+
+            <p class="normal">YOUR FEET DESERVE THE BEST AND WE’RE HERE TO <br>HELP YOU WITH OUR SHOES.YOUR FEET DESERVE <br> THE BEST AND WE’RE
+                HERE TO HELP YOU WITH OUR <br> SHOES.</p>
+            </div>
+                <div class="shoe-image">
+                    <img src="./shoe_image.png" alt="">
+                </div>
+        
+
+
+    </div>
+
+    <div class="buttons">
+        <button class="btn-shop">Shop Now</button>
+        <button class="btn-category">Category</button>
+    </div>
+    <div class="normal-text">
+        <p>Also Available On</p>
+    </div>
+
+    <div class="images">
+        <div class="img1"><img src="./flipkart.png" alt=""></div>
+        <div class="img2"><img src="./amazon.png" alt=""></div>
+    </div>
+
+
+
+    <script src="./app.js"></script>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nike</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    /* Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: white;
+}
+
+.logo img {
+    max-width: 100px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #000;
+}
+
+.btn {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    padding: 8px 20px;
+    background-color: #D01C28;
+    color: #fff;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Hamburger Menu Styling */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 4px 0;
+}
+
+/* Mobile Nav Hidden By Default */
+.mobile-nav {
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+/* Show Mobile Nav When Active */
+.mobile-nav.active {
+    display: flex !important;
+}
+
+/* Mobile Nav Links */
+.mobile-nav nav a,
+.mobile-nav .btn {
+    margin: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    .btn {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* Hero Section Styling */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Add further responsive styles here as needed */
+
+</style>
+
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <div class="logo">
+            <img src="./brand_logo (1).png" alt="Nike Logo">
+        </div>
+        <nav>
+            <a href="#">MENU</a>
+            <a href="#">LOCATION</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="btn">Login</div>
+        <div class="hamburger">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+    </div>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav">
+        <nav>
+            <a href="#">MENU</a>
+            <a href="#">LOCATION</a>
+            <a href="#">ABOUT</a>
+            <a href="#">CONTACT</a>
+        </nav>
+        <div class="btn">Login</div>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div class="main-text">
+            <p class="bold">YOUR FEET <br> DESERVE <br> THE BEST</p>
+            <p class="normal">YOUR FEET DESERVE THE BEST AND WE’RE HERE TO <br>HELP YOU WITH OUR SHOES. YOUR FEET DESERVE <br> THE BEST AND WE’RE HERE TO HELP YOU WITH OUR <br> SHOES.</p>
+        </div>
+        <div class="shoe-image">
+            <img src="./shoe_image.png" alt="">
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="buttons">
+        <button class="btn-shop">Shop Now</button>
+        <button class="btn-category">Category</button>
+    </div>
+
+    <div class="normal-text">
+        <p>Also Available On</p>
+    </div>
+
+    <!-- Images -->
+    <div class="images">
+        <div class="img1"><img src="./flipkart.png" alt=""></div>
+        <div class="img2"><img src="./amazon.png" alt=""></div>
+    </div>
+
+    <script src="./app.js"></script>
+
+
+    <script>
+        // Select Hamburger Menu and Mobile Nav
+const hamburger = document.querySelector('.hamburger');
+const mobileNav = document.querySelector('.mobile-nav');
+
+// Toggle Mobile Nav on Hamburger Click
+hamburger.addEventListener('click', () => {
+    mobileNav.classList.toggle('active');
+});
+
+    </script>
+</body>
+
+</html>
